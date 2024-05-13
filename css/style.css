@@ -1,0 +1,234 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variabeles */
+:root{
+    --navabar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    position: relative;
+    display: flex;
+    /* Align Items Center in Verticla */
+    align-items: center;
+    /* Justify Content Center in Horizontal */
+    /* justify-content: center; */
+}
+
+/* Navigation Bar Logo and Image */
+#logo{
+margin: 4px 17px;
+}
+#logo img{
+margin: 2px 3px;
+height: 100px;
+width: 100px;
+}
+
+/* Navigation Bar List Styling */
+#navbar ul{
+    display: flex;
+}
+/* Black Transparent Strip */
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   text-decoration: none;
+   padding:3px 21px;
+   font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+/* Home Section */
+
+#home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+justify-content: center;
+align-items: center;
+height: 400px;
+}
+#home::before{
+content: "";
+position: absolute;
+top:0px;
+left: 0px;
+background:url('/bg/bg1.jpg') no-repeat center center/cover;
+width: 100%;
+height: 620px;
+z-index: -2;
+opacity: 1;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+.services-container{
+    margin: 100px 0px;
+    padding: 20px 2px;
+    height: 330px;
+}
+.services{
+    display: flex;
+    margin: 34px;
+}
+.services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 0px 19px 19px;
+    border-radius: 28px;
+    background: rgb(242, 242, 242);
+    }
+.services .box img{
+    height:100px;
+    width: 100px;
+    display: block;
+    margin:2px auto;
+}
+/* Clients Section */
+
+#clientsection{
+height: 293px;
+}
+#clientsection::before{
+content: "";
+position: absolute;
+background: url('/bg/bg.jpg');
+width: 100%;
+height: 297px;
+z-index: -1;
+opacity: 0.4;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.clients img{
+    height: 124px;
+}
+.clientitem{
+    padding: 34px;
+}
+
+/* Contact Section */
+#contact{
+position: relative;
+margin: 4px 0px;
+    padding: 0px 0px;
+}
+#contact::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('/bg/contact.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contactbox{
+    display: flex;
+    padding: 2px 3px;
+    align-items: center;
+    justify-content: center;
+}
+#contactbox input{
+    padding-bottom: 5px;
+    font-size: 1rem;
+    margin: 3px;
+    width: 156%;
+    border-radius: 4px;
+}
+#contacbox form{
+    width: 40%;
+    font-family: sans-serif
+}
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+border-radius: 9px;}
+#contactbox label{
+    font-size: 1.3rem;
+}
+
+/* Footer */
+.footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+}
+/* Utility Classes */
+.hprimary{
+    font-size: 2rem;
+    padding: 12px;
+text-align: center;}
+.hsecondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.center{
+    text-align: center;
+}
+/* Order Now Button */
+.btn{
+    color: rgb(255, 255, 255);
+    padding: 3px 8px;
+    border: 3px solid rgb(255, 251, 251);
+    background-color: rgb(238, 131, 131);
+    margin: 20px 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div .btn{
+    color: rgb(255, 255, 255);
+    padding: 3px 8px;
+    /* border: 3px solid rgb(255, 251, 251); */
+    /* background-color: rgb(238, 131, 131); */
+    /* margin: 20px 7px; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
